@@ -1,6 +1,6 @@
 Name:		extract-xiso
 Version:	2.5
-Release:	%mkrel 1
+Release:	2
 Summary:	A backup tool for creating and extracting disc image .iso's of XBox games
 License:	BSD
 Group:		Archiving/Backup
