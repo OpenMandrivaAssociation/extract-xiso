@@ -1,11 +1,11 @@
 Name:		extract-xiso
-Version:	2.5
+Version:	2.7.1
 Release:	2
 Summary:	A backup tool for creating and extracting disc image .iso's of XBox games
 License:	BSD
 Group:		Archiving/Backup
 URL:		http://sourceforge.net/projects/extract-xiso
-Source0:	%{name}_v%{version}_src.tgz
+Source0:	%{name}-%{version}.tar.gz
 
 %description
 A backup tool for creating and extracting disc image .iso's of XBox games.
