@@ -1,11 +1,11 @@
 Name:		extract-xiso
-Version:	2.5
+Version:	2.7.1
 Release:	2
 Summary:	A backup tool for creating and extracting disc image .iso's of XBox games
 License:	BSD
 Group:		Archiving/Backup
 URL:		http://sourceforge.net/projects/extract-xiso
-Source0:	%{name}_v%{version}_src.tgz
+Source0:	%{name}-%{version}.tar.gz
 
 %description
 A backup tool for creating and extracting disc image .iso's of XBox games.
@@ -19,21 +19,10 @@ For more details see: http://sourceforge.net/projects/extract-xiso
 gcc -D__LINUX__ $CFLAGS $LDFLAGS extract-xiso.c libftp-*/*.c -o extract-xiso
 
 %install
-%__rm -rf %{buildroot}
-%__mkdir_p %{buildroot}%{_bindir}
-%__cp %{name} %{buildroot}%{_bindir}/
-
-%clean
-%__rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_bindir}
+cp %{name} %{buildroot}%{_bindir}/
 
 %files
 %doc LICENSE.TXT README.TXT
 %{_bindir}/%{name}
-
-
-
-%changelog
-* Thu Feb 23 2012 Andrey Bondrov <abondrov@mandriva.org> 2.5-1mdv2011.0
-+ Revision: 779330
-- imported package extract-xiso
 
