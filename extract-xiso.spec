@@ -4,7 +4,7 @@ Release:	2
 Summary:	A backup tool for creating and extracting disc image .iso's of XBox games
 License:	BSD
 Group:		Archiving/Backup
-URL:		http://sourceforge.net/projects/extract-xiso
+URL:		https://sourceforge.net/projects/extract-xiso
 Source0:	%{name}-%{version}.tar.gz
 
 %description
